@@ -1,0 +1,38 @@
+@charset "UTF-8";
+@media screen and (max-width: 576px) {
+  .sp-only {
+    display: block;
+  }
+  .pc-only {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .sp-only {
+    display: none;
+  }
+  .pc-only {
+    display: block;
+  }
+}
+.conteiner {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.content {
+  transition: opacity 0.5s ease-in-out; /* opacityの変化に0.5秒かけてアニメーション */
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.content.active {
+  height: auto;
+  opacity: 1;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}

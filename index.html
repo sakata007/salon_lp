@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- ヘッダー -->
+        <header class="header">
+            <div class="header__container container">
+                <div
+                    class="header__logo"
+                    style="background-color: red; width: 100px"
+                >
+                    ロゴ
+                </div>
+                <div class="header__rightSide">
+                    画像
+                    <img src="" alt="電話番号の画像" />
+                    <img src="" alt="LINEのアイコン" />
+                </div>
+            </div>
+        </header>
+
+        <!-- 画面切り替えボタン -->
+        <div class="toggleButtons">
+            <button
+                onclick="showContent('content1')"
+                class="toggleButtons__content1"
+            >
+                コンテンツ１
+            </button>
+            <button
+                onclick="showContent('content2')"
+                class="toggleButtons__content2"
+            >
+                コンテンツ２
+            </button>
+            <button
+                onclick="showContent('content3')"
+                class="toggleButtons__content3"
+            >
+                コンテンツ３
+            </button>
+        </div>
+
+        <!-- コンテンツ１ -->
+        <div
+            id="content1"
+            class="content active"
+            style="background-color: rgba(0, 128, 0, 0.1)"
+        >
+            <p>これはコンテンツ１です</p>
+            <!-- トップ画像 -->
+            <div class="top">
+                <img src="" alt="トップ画像" />
+            </div>
+
+            <!-- 募集 -->
+            <div class="recruitment">
+                <a href="" class="recruitment__button--large"
+                    >無料カウンセリングを予約する</a
+                >
+                <div class="recruitment__imgConteiner">
+                    <img src="" alt="モニター募集中の画像" />
+                </div>
+                <a href="" class="recruitment__button--small button--small"
+                    >無料カウンセリングを予約する</a
+                >
+                <div class="recruitment__banner">
+                    <img src="" alt="バナー" />
+                </div>
+            </div>
+
+            <!-- 施術のポイント -->
+            <div class="point">
+                <h2>施術のポイント</h2>
+                <div class="point__block">
+                    <div class="point__text--img">
+                        POINT1
+                        <img src="" alt="POINT1" />
+                    </div>
+                    <p class="point__text--large">
+                        大手美容外科出身の<span class="point__text--color"
+                            >有名医が担当</span
+                        >
+                    </p>
+                    <p class="point__text--small">
+                        （2021年指名症例No.1ドクター）
+                    </p>
+                    <a href="" class="button--small"
+                        >無料カウンセリングを予約する</a
+                    >
+                    <p class="point__countDowm">終了まであと〇〇日</p>
+                </div>
+                <!-- 以下、point__blockを複数作成 -->
+            </div>
+
+            <!-- お悩み -->
+            <div class="worries">
+                <h2 class="worries__heading">
+                    <img src="" alt="こんなお悩みはありませんか" />
+                </h2>
+                <ul class="worries__lists">
+                    <li class="worries__list">悩み１</li>
+                    <li class="worries__list">悩み２</li>
+                    <li class="worries__list">悩み３</li>
+                    <li class="worries__list">悩み４</li>
+                    <li class="worries__list">悩み５</li>
+                </ul>
+                <div class="worries__strength">
+                    <img src="" alt="こんなお悩みに" />
+                    <p class="worries__strength--text">
+                        〇〇は<span class="worries__strength--span"
+                            >徹底的に寄り添います！</span
+                        >
+                    </p>
+                </div>
+            </div>
+
+            <!-- 特徴 -->
+            <div class="features">
+                <h2 class="features__heading">当サロンの特徴</h2>
+                <ul class="features__lists">
+                    <li class="features__list">
+                        <img src="" alt="特徴＿＿背景画像" />
+                        <p class="features_list--text">
+                            テキストテキスト（テキストは画像ファイルに入れ込む可能性あり）
+                        </p>
+                    </li>
+                    <!-- 以下、features__listを複数作成 -->
+                </ul>
+                <a href="" class="features__button button--large"></a>
+            </div>
+
+            <!-- 選ばれる理由 -->
+            <div class="reason">
+                <h2 class="reason__heading">当サロンが選ばれる理由</h2>
+                <ul class="reason__lists container">
+                    <li class="reason__list">
+                        <img src="" alt="理由01" />
+                        <p class="reason__list--heading">圧倒的な技術力</p>
+                        <img src="" alt="理由の写真" />
+                        <p class="reason__list--text"></p>
+                    </li>
+                    <!-- 以下、reason__listを複数作成 -->
+                </ul>
+            </div>
+
+            <!-- プラン -->
+            <div class="plan">
+                <h2 class="plan__heading">当サロンのオーダーメイド施術</h2>
+                <ul class="plan__lists">
+                    <li class="plan__list">
+                        <img src="" alt="プランA" />
+                        <!-- 見本サイトは画像で挿入しているが、場合によってはhtmlで再現 -->
+                    </li>
+                    <!-- 以下、plan__listを複数作成 -->
+                </ul>
+            </div>
+
+            <!-- 比較 -->
+            <div class="comparison"></div>
+            <!-- 人の紹介 -->
+            <div class="person"></div>
+            <!-- 施術の流れ -->
+            <div class="flow"></div>
+            <!-- 募集 -->
+            <div class="recruitment"></div>
+            <!-- 申し込み -->
+            <div class="application"></div>
+            <!-- お客様の声 -->
+            <div class="voice"></div>
+            <!-- 訴求 -->
+            <div class="appeal"></div>
+            <!-- 募集 -->
+            <div class="recruitment"></div>
+        </div>
+        <!-- コンテンツ１ここまで -->
+
+        <!-- コンテンツ２ -->
+        <div id="content2" class="content" style="background-color: yellow">
+            <p>これはコンテンツ２です</p>
+            <!-- トップ画像 -->
+            <div class="top"></div>
+            <!-- 募集 -->
+            <div class="recruitment"></div>
+            <!-- 施術のポイント -->
+            <div class="point"></div>
+            <!-- お悩み -->
+            <div class="worries"></div>
+            <!-- 特徴 -->
+            <div class="features"></div>
+            <!-- 選ばれる理由 -->
+            <div class="reason"></div>
+            <!-- プラン -->
+            <div class="plan"></div>
+            <!-- 比較 -->
+            <div class="comparison"></div>
+            <!-- 人の紹介 -->
+            <div class="person"></div>
+            <!-- 施術の流れ -->
+            <div class="flow"></div>
+            <!-- 募集 -->
+            <div class="recruitment"></div>
+            <!-- 申し込み -->
+            <div class="application"></div>
+            <!-- お客様の声 -->
+            <div class="voice"></div>
+            <!-- 訴求 -->
+            <div class="appeal"></div>
+            <!-- 募集 -->
+            <div class="recruitment"></div>
+        </div>
+        <!-- コンテンツ２ここまで -->
+
+        <!-- コンテンツ３ -->
+        <div id="content3" class="content" style="background-color: red">
+            <p>これはコンテンツ３です</p>
+            <!-- トップ画像 -->
+            <div class="top"></div>
+            <!-- 募集 -->
+            <div class="recruitment"></div>
+            <!-- 施術のポイント -->
+            <div class="point"></div>
+            <!-- お悩み -->
+            <div class="worries"></div>
+            <!-- 特徴 -->
+            <div class="features"></div>
+            <!-- 選ばれる理由 -->
+            <div class="reason"></div>
+            <!-- プラン -->
+            <div class="plan"></div>
+            <!-- 比較 -->
+            <div class="comparison"></div>
+            <!-- 人の紹介 -->
+            <div class="person"></div>
+            <!-- 施術の流れ -->
+            <div class="flow"></div>
+            <!-- 募集 -->
+            <div class="recruitment"></div>
+            <!-- 申し込み -->
+            <div class="application"></div>
+            <!-- お客様の声 -->
+            <div class="voice"></div>
+            <!-- 訴求 -->
+            <div class="appeal"></div>
+            <!-- 募集 -->
+            <div class="recruitment"></div>
+        </div>
+        <!-- コンテンツ３ここまで -->
+
+        <!-- MEMO: 1/20作業ここまで -->
+
+        <!-- よくある質問 -->
+        <div class="voice"></div>
+        <!-- バナー -->
+        <div class="banner"></div>
+        <!-- 募集 -->
+        <div class="recruitment"></div>
+        <!-- 申し込みフォーム -->
+        <div class="form"></div>
+        <!-- アクセス -->
+        <div class="access"></div>
+        <!-- フッター -->
+        <footer></footer>
+        <script>
+            function showContent(contentId) {
+                // 全てのコンテンツを非表示
+                let allContents = document.querySelectorAll(".content");
+                for (let i = 0; i < allContents.length; i++) {
+                    allContents[i].classList.remove("active");
+                }
+
+                // 選択されたコンテンツを表示
+                let selectedContent = document.getElementById(contentId);
+                if (selectedContent) {
+                    selectedContent.classList.add("active");
+                }
+            }
+
+            // デフォルトでコンテンツ１を表示
+            window.addEventListener("DOMContentLoaded", function () {
+                showContent("content1");
+            });
+        </script>
+    </body>
+</html>

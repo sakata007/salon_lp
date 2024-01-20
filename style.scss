@@ -1,0 +1,72 @@
+// 共通パーツ
+
+// スマートフォン向けスタイル
+$breakpoint-sm: 576px;
+
+// タブレット向けスタイル
+$breakpoint-md: 768px;
+
+// デスクトップ向けスタイル
+$breakpoint-lg: 992px;
+
+// スマートフォン幅だけで表示されるコンテンツ
+@media screen and (max-width: $breakpoint-sm) {
+    .sp-only {
+        display: block;
+    }
+
+    .pc-only {
+        display: none;
+    }
+}
+
+// タブレット幅以上で表示されるコンテンツ
+@media screen and (min-width: $breakpoint-md) {
+    .sp-only {
+        display: none;
+    }
+
+    .pc-only {
+        display: block;
+    }
+}
+
+// スマートフォン向けスタイル
+@media screen and (max-width: $breakpoint-sm) {
+    // スタイルの記述
+}
+
+// タブレット向けスタイル
+@media screen and (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+    // スタイルの記述
+}
+
+// デスクトップ向けスタイル
+@media screen and (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
+    // スタイルの記述
+}
+
+.conteiner {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.content {
+    transition: opacity 0.5s ease-in-out; /* opacityの変化に0.5秒かけてアニメーション */
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.content.active {
+    height: auto;
+    opacity: 1;
+}
+
+// ヘッダー
+.header {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
